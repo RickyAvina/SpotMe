@@ -64,32 +64,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBE-b5-YUO">
-                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem title="SpotMe" id="iJm-xJ-WAM"/>
-                                    <tabBarItem title="Spot" id="Kxf-fD-NPG" userLabel="Spot"/>
-                                    <tabBarItem title="History" id="PZo-bz-OcQ"/>
-                                </items>
-                            </tabBar>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Osc-Aw-QBh">
-                                <rect key="frame" x="0.0" y="63" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="90E-ua-5u0" id="Zbo-HY-Dha"/>
-                                </connections>
-                            </searchBar>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMi-FV-0IP">
                                 <rect key="frame" x="0.0" y="19" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="ACz-0T-Sqe"/>
+                                    <navigationItem title="Title" id="ACz-0T-Sqe">
+                                        <barButtonItem key="rightBarButtonItem" style="plain" id="mxk-Wo-esB">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="15C-dv-Bu7">
+                                                <rect key="frame" x="545" y="7" width="35" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Filter"/>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dBD-mM-sa6">
-                                <rect key="frame" x="0.0" y="107" width="600" height="444"/>
+                                <rect key="frame" x="0.0" y="63" width="600" height="488"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g24-cx-WPg">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem systemItem="favorites" id="je9-wR-RT4"/>
+                                    <tabBarItem systemItem="more" id="Rh9-9s-Wyl"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -102,14 +102,115 @@
                 <searchDisplayController id="d7x-xf-8fa">
                     <connections>
                         <outlet property="delegate" destination="90E-ua-5u0" id="8uE-Jj-nuZ"/>
-                        <outlet property="searchBar" destination="Osc-Aw-QBh" id="hBV-Kd-DWU"/>
                         <outlet property="searchContentsController" destination="90E-ua-5u0" id="ovG-Dw-5ev"/>
                         <outlet property="searchResultsDataSource" destination="90E-ua-5u0" id="eiV-8J-HMT"/>
                         <outlet property="searchResultsDelegate" destination="90E-ua-5u0" id="VaW-WR-aKc"/>
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-412" y="-40"/>
+            <point key="canvasLocation" x="1185" y="-516"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F1q-e7-dUQ">
+            <objects>
+                <viewController id="QLM-gr-amt" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="SFS-WM-UYz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="" id="B8K-Zh-dx1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yY2-80-YvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185" y="307"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="35S-pQ-PQS">
+            <objects>
+                <tabBarController id="e2K-mb-rFI" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="g34-Mx-tKO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="QLM-gr-amt" kind="relationship" relationship="viewControllers" id="hRN-aF-72o"/>
+                        <segue destination="90E-ua-5u0" kind="show" id="7nn-Kr-oQp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbm-X5-usV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="1"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ckS-vl-1NB">
+            <objects>
+                <viewController id="Hhc-EK-34i" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kzj-T0-SFh"/>
+                        <viewControllerLayoutGuide type="bottom" id="gza-Sw-HrB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JPE-CF-irI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yk7-pO-Ltb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="oOL-fD-T1Z"/>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3o-Bf-BdQ">
+                                <rect key="frame" x="0.0" y="44" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Hhc-EK-34i" id="X0t-Lq-NWK"/>
+                                </connections>
+                            </searchBar>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1o-eR-kO8">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Spot" id="XSU-oa-TvS"/>
+                                    <tabBarItem title="Ask" id="7le-44-aRk"/>
+                                    <tabBarItem title="Trophies" id="pT1-Lw-XJe"/>
+                                    <tabBarItem title="More" id="ttp-5l-87E"/>
+                                </items>
+                            </tabBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Popular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fo-FS-OzN">
+                                <rect key="frame" x="20" y="246" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IV1-Iy-QoE">
+                                <rect key="frame" x="20" y="106" width="560" height="108"/>
+                                <state key="normal" title="Ask For Something!"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cgb-YU-zIC">
+                                <rect key="frame" x="0.0" y="275" width="600" height="276"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="951-OG-GAQ" id="Pll-Bm-Lxo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VG1-tr-wU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="951-OG-GAQ">
+                    <connections>
+                        <outlet property="delegate" destination="Hhc-EK-34i" id="5mb-Tj-gH5"/>
+                        <outlet property="searchBar" destination="F3o-Bf-BdQ" id="Gb0-lv-AjO"/>
+                        <outlet property="searchContentsController" destination="Hhc-EK-34i" id="coG-PR-gZM"/>
+                        <outlet property="searchResultsDataSource" destination="Hhc-EK-34i" id="Syn-rN-uMz"/>
+                        <outlet property="searchResultsDelegate" destination="Hhc-EK-34i" id="kcx-SB-HA5"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-987" y="702"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ebd-h4-qzM">
@@ -145,4 +246,7 @@
             <point key="canvasLocation" x="-814" y="-1875"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7nn-Kr-oQp"/>
+    </inferredMetricsTieBreakers>
 </document>

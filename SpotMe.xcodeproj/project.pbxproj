@@ -12,7 +12,6 @@
 		30BA093E1D56D59A004C00A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BA093C1D56D59A004C00A7 /* Main.storyboard */; };
 		30BA09411D56D59A004C00A7 /* SpotMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30BA093F1D56D59A004C00A7 /* SpotMe.xcdatamodeld */; };
 		30BA09431D56D59A004C00A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BA09421D56D59A004C00A7 /* Assets.xcassets */; };
-		30BA09461D56D59A004C00A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30BA09441D56D59A004C00A7 /* LaunchScreen.storyboard */; };
 		30BA09511D56D59A004C00A7 /* SpotMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BA09501D56D59A004C00A7 /* SpotMeTests.swift */; };
 		30BA095C1D56D59A004C00A7 /* SpotMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BA095B1D56D59A004C00A7 /* SpotMeUITests.swift */; };
 /* End PBXBuildFile section */
@@ -41,7 +40,6 @@
 		30BA093D1D56D59A004C00A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30BA09401D56D59A004C00A7 /* SpotMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpotMe.xcdatamodel; sourceTree = "<group>"; };
 		30BA09421D56D59A004C00A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		30BA09451D56D59A004C00A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30BA09471D56D59A004C00A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30BA094C1D56D59A004C00A7 /* SpotMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BA09501D56D59A004C00A7 /* SpotMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotMeTests.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				30BA093A1D56D59A004C00A7 /* ViewController.swift */,
 				30BA093C1D56D59A004C00A7 /* Main.storyboard */,
 				30BA09421D56D59A004C00A7 /* Assets.xcassets */,
-				30BA09441D56D59A004C00A7 /* LaunchScreen.storyboard */,
 				30BA09471D56D59A004C00A7 /* Info.plist */,
 				30BA093F1D56D59A004C00A7 /* SpotMe.xcdatamodeld */,
 			);
@@ -232,7 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30BA09461D56D59A004C00A7 /* LaunchScreen.storyboard in Resources */,
 				30BA09431D56D59A004C00A7 /* Assets.xcassets in Resources */,
 				30BA093E1D56D59A004C00A7 /* Main.storyboard in Resources */,
 			);
@@ -303,14 +299,6 @@
 				30BA093D1D56D59A004C00A7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		30BA09441D56D59A004C00A7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30BA09451D56D59A004C00A7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
