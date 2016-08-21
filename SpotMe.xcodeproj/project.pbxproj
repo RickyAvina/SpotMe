@@ -14,6 +14,7 @@
 		30BA09431D56D59A004C00A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BA09421D56D59A004C00A7 /* Assets.xcassets */; };
 		30BA09511D56D59A004C00A7 /* SpotMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BA09501D56D59A004C00A7 /* SpotMeTests.swift */; };
 		30BA095C1D56D59A004C00A7 /* SpotMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BA095B1D56D59A004C00A7 /* SpotMeUITests.swift */; };
+		30BA096E1D6A2F23004C00A7 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BA096D1D6A2F23004C00A7 /* MainPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		30BA09571D56D59A004C00A7 /* SpotMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30BA095B1D56D59A004C00A7 /* SpotMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotMeUITests.swift; sourceTree = "<group>"; };
 		30BA095D1D56D59A004C00A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30BA096D1D6A2F23004C00A7 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				30BA09381D56D59A004C00A7 /* AppDelegate.swift */,
 				30BA093A1D56D59A004C00A7 /* ViewController.swift */,
 				30BA093C1D56D59A004C00A7 /* Main.storyboard */,
+				30BA096D1D6A2F23004C00A7 /* MainPage.swift */,
 				30BA09421D56D59A004C00A7 /* Assets.xcassets */,
 				30BA09471D56D59A004C00A7 /* Info.plist */,
 				30BA093F1D56D59A004C00A7 /* SpotMe.xcdatamodeld */,
@@ -258,6 +261,7 @@
 				30BA093B1D56D59A004C00A7 /* ViewController.swift in Sources */,
 				30BA09391D56D59A004C00A7 /* AppDelegate.swift in Sources */,
 				30BA09411D56D59A004C00A7 /* SpotMe.xcdatamodeld in Sources */,
+				30BA096E1D6A2F23004C00A7 /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
